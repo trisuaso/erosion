@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "title": "Greedy",
+        "description": "",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:carrot",
+                    "components": {
+                        "minecraft:custom_name": "\"Greed\""
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "erosion:unlock",
+        "experience": 1000
+    }
+}
